@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.7.20)  15 AUG 2017 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.7.20)  15 AUG 2017 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -976,38 +976,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+[8] [9]
 \tf@thm=\write7
 \openout7 = `Note.thm'.
 
-[7] (./Note.aux) ) 
+ [10] (./Note.aux) ) 
 Here is how much of TeX's memory you used:
- 16328 strings out of 492990
- 259443 string characters out of 6136334
- 385742 words of memory out of 5000000
- 19571 multiletter control sequences out of 15000+600000
+ 16330 strings out of 492990
+ 259470 string characters out of 6136334
+ 386748 words of memory out of 5000000
+ 19573 multiletter control sequences out of 15000+600000
  14741 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,23n,94p,3217b,449s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super
--ts1.enc}<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2017/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm1095.pfb>
-Output written on Note.pdf (7 pages, 203624 bytes).
+{c:/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
+er-ts1.enc}<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2017/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2017/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1095.pfb>
+Output written on Note.pdf (10 pages, 219515 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

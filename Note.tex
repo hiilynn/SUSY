@@ -21,7 +21,7 @@
 {\Huge \bfseries SUSY Lectures in 2017 Summer}\\[10mm]
 Kwang Sik Jeong \footnotemark[1] \\
 \VS
-{\SM Noted by Yeji Park, T.G. Kim} 
+{\SM Noted by Y.J. Park, T.G. Kim} 
 \end{center}
 
 \footnotetext[1]{Dept. of Physics, Pusan National University}
@@ -391,5 +391,157 @@ From the composition rule : $(\Lambda_2, a_2)(\Lambda_1, a_1) = (\Lambda_2\Lambd
 	\end{center}
 	
 \end{itemize}
-  
+
+\newpage
+
+\section{Supersymmetry}
+
+\subsection{Supersymmetry}
+
+\vs
+
+Symmetry to cancle $\Lambda^2$ - contributions?
+$\lambda = y^2?$ \quad {\bfseries [Supersymmetry]}
+
+\VS
+
+{\bfseries $-$ Supersymmetry} : Boson $\leftrightarrow$ Fermion
+
+$$
+\begin{aligned}
+	\bar{Q}\ket{B} &= \ket{F} \quad (\bar{Q} = Q^\dagger) \\
+	Q\ket{F} &= \ket{B} \\
+\end{aligned}
+$$
+
+* SUSY operator : Anti-commuting spinor (spin 1/2) $\Rightarrow$ Spacetime Symmetry
+
+\vs
+
+\begin{note}[SUSY]
+	\normalfont SUSY is the unique extension of Poincar\'{e} algebra within the QM framework. \newline
+	(Under reasonable physical assumptions)
+\end{note}
+
+\vs
+
+{\bfseries $-$ Supermultiplet : $B, F$ (Superpartner)}
+\begin{enumerate}[(i)]
+	\item Equal number of fermion and boson D.O.F. \newline
+	$$
+	n_B(P_\mu) - n_F(P_\mu) \rightarrow \sum_i\braket{i|(-1)^{2s}P^\mu|i}
+	$$ \newline
+	Since $Q \in (\frac{1}{2}, 0),\, \bar{Q}\in(0,\frac{1}{2})$, then $\ACommutator{Q}{\bar{Q}} \in (\frac{1}{2}, \frac{1}{2}),\, \ACommutator{Q}{\bar{Q}} \sim P^\mu$.
+	
+	\begin{align*}
+	\sum_i\braket{i|(-1)^{2s}P^\mu|i} &= \sum_i\braket{i|(-1)^{2s}QQ^{\dagger}|i} + \sum_i\braket{i|(-1)^{2s}Q^\dagger Q|i} \\
+	&= \sum_i\braket{i|(-1)^{2s}QQ^{\dagger}|i} + \sum_{ij}\braket{i|(-1)^{2s}Q^\dagger|j}\braket{j|Q|i} \\
+	&= \sum_i\braket{i|(-1)^{2s}QQ^{\dagger}|i} + \sum_{ij}\braket{j|Q|i}\braket{i|(-1)^{2s}Q^\dagger|j} \\
+	&= \sum_i\braket{i|(-1)^{2s}QQ^{\dagger}|i} + \sum_j\braket{j|Q(-1)^{2s}Q^\dagger|j} \\
+	&= \sum_i\braket{i|(-1)^{2s}QQ^{\dagger}|i} - \sum_j\braket{j|(-1)^{2s}QQ^\dagger|j} = 0
+	\end{align*}
+	
+	$$ \therefore n_B - n_F = 0 \HS for \hs P^\mu \neq 0$$
+	
+	\item Internal Symmetry \newline
+	$$
+	\begin{gathered}
+	\Commutator[Q][T_i] = 0 \HS \text{where $T_i$ is generator of internal symmetry group} \\
+	\Rightarrow\, B\&F \hs  \text{in the supermultiplet : Same internal symmetry charge.} 
+	\end{gathered}
+	$$
+	
+	\item Exception : $R$-symmetry \newline
+	$$
+	\begin{aligned}
+		\text{Global}\HS U(1)_R &
+		\begin{cases}
+			\text{As a vector: } Q\rightarrow e^{i\lambda}Q,\, \bar{Q} \rightarrow e^{-i\lambda}\bar{Q} \\
+			\text{As an operator: } \hat{Q}\rightarrow e^{-i\lambda\hat{R}}\hat{Q}e^{i\lambda\hat{R}}
+		\end{cases} \\
+		& \Rightarrow 
+		\begin{cases}
+			\Commutator[Q][R] = +Q \\
+			\Commutator[\bar{Q}][R] = -Q
+		\end{cases}
+	\end{aligned}
+	$$
+\end{enumerate}
+
+\VS\VS
+
+\subsubsection{Super-Poincar\'{e} algebra ($N=1$)}
+
+\vs
+
+{\bfseries $-$ SUSY generators} : $Q_\alpha \sim$ Spinor (spin 1/2)
+
+\HS Lorentz Transform $
+\begin{cases}
+	\text{As a vector: } Q_\alpha \rightarrow Q'_\alpha = \exp\tensor{\left[-\dfrac{1}{2}\omega_{\mu\nu} \sigma^{\mu\nu} \right]}{_\alpha ^\beta} Q_\beta \\
+	\\
+	\text{As an operator: } \hat{Q}_\alpha \rightarrow \hat{Q}'_\alpha = \hat{U}^\dagger \hat{Q}_\alpha \hat{U}
+\end{cases}
+$
+
+\vs
+ 
+For some calculations, we can derive next algebra :
+\begin{enumerate}[(i)]
+	\item $\Commutator[P^\mu][P^\nu] = 0$
+	\item $\Commutator[M_{\mu\nu}][P_\rho] = -i(\eta_{\mu\rho}P_\nu - \eta_{\nu\rho}P_\mu )$
+	\item $\Commutator[M_{\mu\nu}][M_{\rho\sigma}] = -i(\eta_{\mu\rho}M_{\nu\sigma}-\eta_{\nu\rho}M_{\mu\sigma} + \eta_{\nu\sigma}M_{\mu\rho} - \eta_{\mu\sigma}M_{\nu\rho})$
+	\item $\Commutator[P_\mu][Q_\sigma] = \Commutator[P_\mu][\bar{Q}^{\dot{\alpha}}] = 0$
+	\item $\Commutator[M_{\mu\nu}][Q_\alpha] = -i\tensor{(\sigma_{\mu\nu})}{_\alpha^\beta}Q_\beta$
+	\item $\Commutator[M_{\mu\nu}][\bar{Q}_{\dot{\beta}}] = -i\tensor{(\bar{\sigma}_{\mu\nu})}{^{\dot{\alpha}}_{\dot{\beta}}}\bar{Q}^{\dot{\beta}}$
+	\item $\ACommutator{Q_\alpha}{Q_\beta} = 0$
+	\item $\ACommutator{Q_\alpha}{\bar{Q}_{\dot{\beta}}} = 2\tensor{(\sigma^\mu)}{_{\alpha\dot{\beta}}} P_\mu$
+\end{enumerate}
+
+Now let's find representations.
+
+\pagebreak
+
+\subsubsection{Superspace Formalism}
+
+{\bfseries $-$ Superspace} ($\chi^\mu, \theta^\alpha, \bar{\theta}_\Dot{\alpha} $) ; Corresponding to ($P^\mu, Q^\alpha, \bar{Q}_\Dot{\alpha}$)
+
+* SUSY : Translation in the Grassmann Coordinates.
+
+$$
+\begin{aligned}
+	\delta
+	\begin{pmatrix}
+		\chi^\mu \\ \theta^\alpha \\ \bar{\theta}_\Dot{\alpha}
+	\end{pmatrix}
+	&\equiv -i(a_\rho P^\rho + \frac{1}{2}\omega_{\rho\sigma}M^{\rho\sigma}-\xi Q - \bar{\xi}\bar{Q})
+	\begin{pmatrix}
+		\chi^\mu \\ \theta^\alpha \\ \bar{\theta}_\Dot{\alpha}
+	\end{pmatrix} \\
+	\delta \chi^\mu &= a^\mu + \tensor{\omega}{^\mu_\nu}\chi^\nu - ic(\xi\sigma^\mu\bar{\theta}) + ic^*(\theta\sigma^\mu\bar{\xi}) \\
+	\delta\theta^\alpha &= \frac{i}{2}\omega_{\mu\nu}\tensor{(\sigma^{\mu\nu})}{^\alpha_\beta}\theta^\beta + \xi^\alpha \\
+	\delta\bar{\theta}_\Dot{\alpha} &= \frac{i}{2}\omega_{\mu\nu} {(\bar{\sigma}^{\mu\nu})_\Dot{\alpha}}^\Dot{\beta}\bar{\theta}_\Dot{\beta} + \bar{\xi}_\Dot{\alpha}
+\end{aligned}
+$$
+
+\vs
+
+Thus, one finds,
+$$
+\begin{aligned}
+	P_\mu &= i\partial_\mu \\
+	Q_\alpha &= -i\PD{}{\theta_\alpha} - c(\sigma^\mu)_{\alpha\Dot{\beta}} \bar{\theta}^\Dot{\beta} \PD{}{x^\mu} \\
+	\bar{Q}_\Dot{\alpha} &= i\PD{}{\bar{\theta}^\Dot{\alpha}} + c^* \theta^\beta (\sigma^\mu)_{\beta\Dot{\alpha}} \PD{}{x^\mu}
+\end{aligned}
+$$
+
+\begin{center}
+	where $c$ is determined by the commutation relation.
+\end{center}
+$$
+\begin{aligned}
+	&\ACommutator{Q_\alpha}{\bar{Q}_\Dot{\beta}} = 2(\sigma^\mu)_{\alpha\Dot{\beta}} P_\mu \\
+	\Rightarrow & Re(c) = 1 \quad \text{(Convenient to set $c=1$)}
+\end{aligned}
+$$
 \end{document}
