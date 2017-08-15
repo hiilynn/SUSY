@@ -205,7 +205,7 @@ We can't \& don't need to see higher mass particles.
 
 {\bfseries $-$ Full Theory (UV)}
 
-\begin{equation}
+$$
 \begin{aligned}
 	\L_{full} &= \L_{H}(\phi_H, \phi_L) + \L(\phi_L) \\
 	&\text{where} \hs 
@@ -214,7 +214,7 @@ We can't \& don't need to see higher mass particles.
 		\phi_L : \text{Fields describing particles with masses }  < \Lambda
 	\end{cases}
 \end{aligned}
-\end{equation}
+$$
 
 \vs
 
@@ -222,7 +222,7 @@ We can't \& don't need to see higher mass particles.
 
 \quad : Integrating out $\phi_H$ in E.O.M. (Effects of all Heavy particle are in $C_i$)
 
-\begin{equation}
+$$
 \begin{aligned}
 	\L_{eff} &= \L(\phi_L) + \sum_{k} \frac{C_i}{\Lambda^{k-4}}\O_i^{(k)} (\phi_L) \\
 	&\text{where} \hs
@@ -231,7 +231,7 @@ We can't \& don't need to see higher mass particles.
 		\Lambda : \text{Cut-off sclae of EFT}
 	\end{cases}
 \end{aligned}
-\end{equation}
+$$
 
 \begin{enumerate}[(1)]
 	\item Contribution of $\O_i^{(k)}$ to a process at energy scale $E \gg \Lambda$ \newline
@@ -321,7 +321,7 @@ $
 
 \vs
 
-{$-$ Coordinate trsf leaving $ds^2 = \eta_{\mu\nu}dx^\mu dx^\nu$ is invariant.}
+{\bfseries $-$ Coordinate trsf leaving $ds^2 = \eta_{\mu\nu}dx^\mu dx^\nu$ is invariant.}
 
 $$
 x'=\Lambda x + a \HS
@@ -332,12 +332,64 @@ x'=\Lambda x + a \HS
 $$
 \newpage
 
-$-$ Inifinitesimal transformation : $(\Lambda, a)$
+{\bfseries$-$ Inifinitesimal transformation : $(\Lambda, a)$}
 
-\begin{equation}
+$$
 \begin{aligned}
-	\delta x^\mu = \eps^\mu + \tensor{\omega}{^\mu _\nu}x^\nu \hs (\omega^{\mu\nu} = -\omega^{\nu\mu})
+	&\delta x^\mu = \eps^\mu + \tensor{\omega}{^\mu _\nu}x^\nu \hs (\omega^{\mu\nu} = -\omega^{\nu\mu}\text{; anti-sym}) \\
+	\Rightarrow \hs &\delta X^\mu = -i\tensor{\left(\eps_\sigma P^\sigma + \frac{1}{2}\omega_{\rho\sigma}M^{\rho\sigma} \right)}{^\mu _\nu}X^\nu \quad \text{($X$ in Vector space)}
 \end{aligned}
-\end{equation}
+$$
 
+In this representations, 
+$
+\begin{cases}
+	P_\mu = i\partial_\mu \\
+	M_{\mu\nu} = i(X_\mu\partial_\nu - X_\nu\partial_\mu)
+\end{cases}
+$
+\hs $\rightarrow$ the form of $P$ and $M$ depends on the reps.
+
+\VS\VS
+
+{\bfseries $-$ Poincar\'{e} algebra}
+
+From the composition rule : $(\Lambda_2, a_2)(\Lambda_1, a_1) = (\Lambda_2\Lambda_1, \Lambda_2a_1 + a_2)$, we can derive below algebra.
+\begin{enumerate}
+	\item $\Commutator[P^\mu][P^\nu] = 0$
+	\item $\Commutator[M^{\mu\nu}][P^{\sigma}] = i(P^\mu\eta^{\nu\sigma}-P^\nu\eta^{\mu\sigma})$
+	\item $\Commutator[M^{\mu\nu}][M^{\rho\sigma}] = i(M^{\mu\sigma}\eta^{\nu\rho} + M^{\nu\rho}\eta^{\mu\sigma} - M^{\mu\rho}\eta^{\nu\sigma} - M^{\nu\sigma}\eta^{\mu\rho})$
+\end{enumerate}
+
+\VS
+
+{\bfseries $-$ Representation on fields : ($x'=\Lambda x + a$)}
+
+\vs
+
+\begin{itemize}
+	\item As a vector, $\phi^a(x)\rightarrow \phi'^a(x') = \tensor{R}{^a _b}(\Lambda) \phi^{b} (x)$ \quad ($\phi$ is regarded as scalar for translations.)
+	\item As a field(quantum) operator, $\hat{\phi}^a(x)$ \newline
+	: Consider transformation of state vector $\ket{\psi}\rightarrow\ket{\psi'}=\hat{U}(\Lambda, a)\ket{\psi}$ \quad ($\hat{U}(\Lambda, a)$ is linear \& unitary.) \newline
+	$$\hat{U}(\Lambda,a) = 1-i\eps_\mu \hat{P}^{\mu} -\frac{i}{2}\omega_{\mu\nu}\hat{M}^{\mu\nu}+\cdots$$
+	
+	\vs
+	
+	Now consider field operator, we can get below equations.
+	
+	$$
+	\begin{cases}
+		\varphi^a(x) = \braket{f|\hat{\phi}^a(x)|g} \HS then \HS 
+			\varphi'^a(x) = \braket{f'|\hat{\phi}^a(x)|g'} =\braket{f|\hat{U}^\dagger \hat{\phi}^a(x)\hat{U}|g}\\
+			\\
+		\varphi'^a(x') = \tensor{R}{^a_b}(\Lambda)\varphi^b(x) = \tensor{R}{^a_b}\braket{f|\hat{\phi}^b(x)|g}
+	\end{cases}
+	$$ \newline
+	$$\therefore \hs \hat{\phi}'^a(x') =  \tensor{R}{^a_b}\hat{\phi}^b(x) = \hat{U}^\dagger \hat{\phi}^a(x')\hat{U}$$
+	\begin{center}
+		(Caution : It's not unitary equivalence!)
+	\end{center}
+	
+\end{itemize}
+  
 \end{document}
