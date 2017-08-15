@@ -1,0 +1,203 @@
+%%% Research Diary - Entry
+%%% Template by Mikhail Klassen, April 2013
+%%%
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[all]{xy}
+
+
+\newcommand{\workingDate}{\textsc{2016 $|$ Winter}}
+\newcommand{\userName}{Yonsei-HEP-COSMO}
+\newcommand{\institution}{Yonsei University}
+\usepackage{researchdiary_png}
+% To add your univeristy logo to the upper right, simply
+% upload a file named "logo.png" using the files menu above.
+
+\begin{document}
+% \univlogo
+
+
+\begin{center}
+{\Huge \bfseries SUSY Lectures in 2017 Summer}\\[10mm]
+Kwang Sik Jeong \footnotemark[1] \\
+\VS
+{\SM Noted by Yeji Park, T.G. Kim} 
+\end{center}
+
+\footnotetext[1]{Dept. of Physics, Pusan National University}
+
+    
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+\subsection{[L1] Quantum Field Theory}
+
+    : basic framework to study elementary particles and their interactions.
+
+\begin{center}
+{\color{blue}{"special relativity + Quantum mechanics"}}
+\end{center}
+
+%
+\begin{equation*}
+ \textnormal{On special relativity} \quad
+ \begin{cases}
+  \textnormal{spacetime}: (ct,\vec{x}) \\
+  \textnormal{force: mediated by fields. (e.g. EM)}
+ \end{cases}
+\end{equation*}
+
+
+%\figure
+$S$: action \\
+$\delta S$ = 0: classical action(least action)
+
+\begin{align*}
+ \braket{f|i} \sim \sum_{\text{path}}e^{iS/\hbar} \quad \textnormal{; path integral} \\
+ \begin{cases}
+  \Delta S \gg \hbar \quad \textnormal{; Classical} \\
+  \Delta S \sim \hbar \quad \textnormal{; Quantum}
+ \end{cases}
+\end{align*}
+
+%
+
+We use the natural unit, $\hbar = c = 1$.
+%
+\begin{align*}
+ \textnormal{Theory} \quad
+ \begin{cases}
+  \textnormal{action}(S) \\
+  \quad \small{\mbox{+}} \\
+  \textnormal{regularization} \\
+  \quad \small{\mbox{+}} \\
+  \textnormal{renormalization}
+ \end{cases}
+\end{align*}
+
+
+\subsubsection*{\normalfont \bfseries 1-a) $S$(action)}
+%
+\begin{equation*}
+ S = \int \underbrace{d^{4}x}_{dtdxdydz} \mathcal{L}(\phi, \partial_{\mu}\phi)
+\end{equation*}
+%
+where $\phi$ is a field, $\phi(x)$. Lagrange has a symmetry. \\
+
+%
+
+\begin{quote}
+i) symmetry \\
+- Important role to better understand natural. \\
+- Defining an elementary particle according to the behavior of the corresponding field with respect to symmetries. \\
+- Determining interactions among particles. \\
+(can be hidden; spontaneous breaking) \\
+%
+\end{quote}
+
+%
+
+{\bf Noether Theorem(classical field theory)} \\
+%
+: continuous symmetry $\rightarrow$ conserved quantity
+
+\VS
+
+{\bf Symmetry}
+%
+ \begin{enumerate}
+  \item Spacetime Symmetry ($x \rightarrow x'$)
+   \begin{enumerate}
+    \item Poincar\'{e} Transformation: transformation leaving the line element invariant. \\
+    $\rightarrow ds^2 = \eta_{\mu \nu} dx^{\mu}dx^{\nu}$
+    \begin{enumerate}
+     \item Lorentz transformation; action conservation
+     \item Translations; energy-momentum conservation
+    \end{enumerate}
+    \item General coordinate Transformation \\
+    $\quad \rightarrow$ general relativity
+   \end{enumerate}
+%
+  \item Internal Symmetry \\
+    $$\Phi^{a}(x) \rightarrow \Phi'^{a}(x) = \tensor{M}{^a _b}\Phi^{b}(x)$$
+    where $\Phi^{a}(x)$ is general field and $a,b$ are internal indices.
+    \begin{equation*}
+     \tensor{M}{^a _b}
+     \begin{cases}
+      \mbox{global symmetry: $\tensor{M}{^a _b}$ is spacetime-independent} \\
+      \mbox{local(gauge) symmetry: $\tensor{M}{^a _b}(x)$ is spacetime-dependent}
+     \end{cases}
+    \end{equation*}
+\end{enumerate}
+
+\VS
+
+QFT: the most general symmetry of the S-matrix(Scattering matrix).
+
+%
+
+\begin{note}
+ Coleman-Mandula(1967)
+ { \normalfont
+  \begin{center}
+   Poincar\'{e} symmetry $\bigotimes$ Internal symmetry
+  \end{center}
+%
+where $\bigotimes$ is a direct product.  
+ \begin{itemize}
+  \item assumption on QFT (local, relativity, 4$D$, \ldots) \\
+        \& scattering interacions.
+  \item considered only bosonic generator. 
+ \end{itemize}
+ }
+\end{note}
+
+%
+Extended to include spinor generators(spin: $\tfrac{1}{2}$, $\tfrac{3}{2}$),
+%
+
+\begin{note}
+ Haag-Lopusza\'{n}ski-Sohnius(1975)
+ { \normalfont
+  \begin{center}
+   Super-Poincar\'{e} symmetry $\bigotimes$ Internal symmetry
+  \end{center}
+ }
+\end{note}
+
+\VS
+
+\subsubsection*{\normalfont \bfseries 1-b) Regularization \& Renormalization}
+%
+\begin{enumerate}
+  \item Regularization
+  \begin{enumerate}
+    \item UV divergence \\
+            : we need to regulate the theory. \\
+         (Infinities $\rightarrow$ absorbed by appropriate counter terms.) \\
+         e.g. cutoff regulation, dimensional regularization
+  \end{enumerate}
+  \item Renormalization \\
+        : determine how to absorb the infinities into counter terms. \\
+        (arbitraty renormalization point $\mu$(unphysical))
+   \begin{enumerate}
+     \item Perturbation Theory \\
+            : expansion w.r.t $\underbrace{\mbox{renormalized parameters.}}_{\SM \mu - \mbox{dep.}}$
+             $\rightarrow$ large logs: $\ln(\frac{E}{\mu}), \ln(\frac{M}{\mu})$ \\
+             $\rightarrow$ physical amplitude(independent of $\mu$) $\rightarrow$ ``set $\mu \sim E$" \\
+     \item RGE(Renormalization Group Equation) \\
+            % figure
+   \end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\subsection{[L2] Effective Field Theory}
+
+
+
+\end{document}
