@@ -94,11 +94,11 @@
 {0mm}%
 {0.1\baselineskip}%
 {0.1\baselineskip}%
-{\bfseries\normalsize\slshape}}
+{\bfseries\normalsize}}
 \makeatother
 
-\renewcommand{\thesubsection}{\arabic{subsection})}
-\renewcommand{\thesubsubsection}{$-$}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{subsection}-\arabic{subsubsection}}
 
 \makeatletter
 \g@addto@macro\normalsize{%
@@ -111,10 +111,10 @@
 %--------------------------------------------------------------------
 %-----------Theorem--------------------------------------------------
 %--------------------------------------------------------------------
-\newtheorem{definition}{Definition}[section]
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{note}{Note}[section]
+\newtheorem{definition}{Definition}[subsection]
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem{note}{Note}[subsection]
 \theoremstyle{break}                                               % Above = No line break, Below = Line break
 \newtheorem{example}{Example}[section]
 \newtheorem{exercise}{Exercise}[section]

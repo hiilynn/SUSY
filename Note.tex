@@ -80,7 +80,7 @@ We use the natural unit, $\hbar = c = 1$.
 \end{align*}
 
 
-\subsubsection*{\normalfont \bfseries 1-a) $S$(action)}
+\subsubsection{$S$(action)}
 %
 \begin{equation*}
  S = \int \underbrace{d^{4}x}_{dtdxdydz} \mathcal{L}(\phi, \partial_{\mu}\phi)
@@ -171,7 +171,7 @@ Extended to include spinor generators(spin: $\tfrac{1}{2}$, $\tfrac{3}{2}$),
 
 \VS
 
-\subsubsection*{\normalfont \bfseries 1-b) Regularization \& Renormalization}
+\subsubsection{Regularization \& Renormalization}
 %
 \begin{enumerate}
   \item Regularization
@@ -198,6 +198,146 @@ Extended to include spinor generators(spin: $\tfrac{1}{2}$, $\tfrac{3}{2}$),
 
 \subsection{[L2] Effective Field Theory}
 
+[Need Figure!] To make massive particle, we need high energy. So in low energy scale, we can see only small mass particles.
+We can't \& don't need to see higher mass particles. 
 
+\VS
+
+{\bfseries $-$ Full Theory (UV)}
+
+\begin{equation}
+\begin{aligned}
+	\L_{full} &= \L_{H}(\phi_H, \phi_L) + \L(\phi_L) \\
+	&\text{where} \hs 
+	\begin{cases}
+		\phi_H : \text{Fields describing particles with masses } >  \Lambda \\
+		\phi_L : \text{Fields describing particles with masses }  < \Lambda
+	\end{cases}
+\end{aligned}
+\end{equation}
+
+\vs
+
+{\bfseries $-$ Effective theory of light fields $\phi_L$}
+
+\quad : Integrating out $\phi_H$ in E.O.M. (Effects of all Heavy particle are in $C_i$)
+
+\begin{equation}
+\begin{aligned}
+	\L_{eff} &= \L(\phi_L) + \sum_{k} \frac{C_i}{\Lambda^{k-4}}\O_i^{(k)} (\phi_L) \\
+	&\text{where} \hs
+	\begin{cases}
+		C_i : \text{Wilson Coefficient (dim=0)} \\
+		\Lambda : \text{Cut-off sclae of EFT}
+	\end{cases}
+\end{aligned}
+\end{equation}
+
+\begin{enumerate}[(1)]
+	\item Contribution of $\O_i^{(k)}$ to a process at energy scale $E \gg \Lambda$ \newline
+	$$C_i\left( \frac{E}{\Lambda} \right)^{k-4}
+	\begin{cases}
+		k = 4 : \text{Marginal} \\
+		k<4 : \text{Relavent} \\
+		k>4 : \text{Irrelavnt - (Almost non-renormalizable)}
+	\end{cases}
+	$$
+	\item Matching (Around $\Lambda$) : Same physical predictions at low energy. \newline
+	$$
+	\lambda_{eff}(\mu)  = \lambda_{full}(\mu) + (\text{threshold corrections})
+	$$ \newline
+	e.g. [Need Figure!]
+\end{enumerate}
+
+\newpage
+
+\subsection{[L2] Poincar\'{e} Symmetry}
+
+\VS
+
+{\bfseries $-$ Symmetry of the SM}
+
+\vs
+
+$ \quad
+\begin{cases}
+	\text{
+		Poincar\'{e} $
+		\begin{cases}
+			\text{Lorentz Inv.} \\
+			\text{Translation Sym.}		
+		\end{cases}
+	$
+	} \\
+	\\
+	\text{
+		Internal $
+		\begin{cases}
+			\text{Global: Baryon number, Lepton number, Flavor Sym.} \\
+			\text{Gauge/Local: $SU(3)_c\times SU(2)_c\times U(1)_Y$}		
+		\end{cases}
+	$
+	}
+\end{cases}
+$
+
+\VS\VS
+
+\subsubsection{Group}
+
+\vs
+
+\begin{definition}[Group]
+	A set of elements $G=\{g_1, g_2, \cdots\} $ with product operator $*$ s.t
+	\begin{enumerate}
+		\item Closure: $\forall g_i, g_j \in G,\hs g_i*g_j\in G$
+		\item Unit element : $\exists e\in G, \hs e*g = g*e = g \HS \forall g\in G$
+		\item Inverse element : $\forall g\in G, \hs \exists g^{-1} \in G \HS s.t \HS g*g^{-1} = g^{-1}*g = e$
+		\item Associativity : $\forall g_i, g_j, g_k \in G, \hs g_i*(g_j*g_k) = (g_i * g_j)*g_k$
+	\end{enumerate}
+\end{definition}
+
+\VS\VS
+
+\subsubsection{Representation}
+
+\VS
+
+\begin{definition}[Representation]
+	A map $G \rightarrow R$ where $R = \{D(g)\}$ such that
+	\begin{enumerate}
+		\item $D(g_1)D(g_2) = D(g_1*g_2)$
+		\item $D(e) = 1$
+		\item $D(g^{-1}) = D(g)^{-1}$
+	\end{enumerate}
+	
+	$D(g)$ is a linear operator acting on a vector space
+	$V=\{v_1, v_2, \cdots \}$.
+\end{definition}
+
+\VS\VS
+
+\subsubsection{Poincar\'{e} group}
+
+\vs
+
+{$-$ Coordinate trsf leaving $ds^2 = \eta_{\mu\nu}dx^\mu dx^\nu$ is invariant.}
+
+$$
+x'=\Lambda x + a \HS
+\begin{cases}
+	a: \text{Translations} \\
+	\Lambda: \text{Lorentz trsf (rotations + boosts)}
+\end{cases}
+$$
+\newpage
+
+$-$ Inifinitesimal transformation : $(\Lambda, a)$
+
+\begin{equation}
+\begin{aligned}
+	\delta x^\mu = \eps^\mu + \tensor{\omega}{^\mu _\nu}x^\nu \hs (\omega^{\mu\nu} = -\omega^{\nu\mu})
+\end{aligned}
+\end{equation}
 
 \end{document}
